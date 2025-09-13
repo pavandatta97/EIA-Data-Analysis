@@ -174,7 +174,7 @@ ORDER BY g.Country, g.year;
 
 
 -- 15. Top 10 countries by population vs  emissions ?
-SELECT DISTINCT p.year
+SELECT DISTINCT p.year,p.country
 FROM population p
 JOIN emission_3 e 
   ON TRIM(p.countries)=TRIM(e.country)
